@@ -1,0 +1,18 @@
+body {
+    background-color: #a21ddb;
+    text-align: center;
+    background-image: linear-gradient(to right, #2e79e9, #416ded, #595dee, #7449eb, #8e28e3);}
+
+.navbar {
+    background-color: #cddb12;
+}
+
+a {
+    color: #0f0fa4;
+}
+
+a:hover {
+    color: #810e0e;
+  }
+
+  

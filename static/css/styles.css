@@ -4,7 +4,7 @@ body {
     background-image: linear-gradient(to right, #2e79e9, #416ded, #595dee, #7449eb, #8e28e3);}
 
 .navbar {
-    background-color: #cddb12;
+    background-color: #db7a12;
 }
 
 a {
@@ -12,7 +12,14 @@ a {
 }
 
 a:hover {
-    color: #810e0e;
+    color: #d5dc0b;
   }
+
+h3{
+    color: aliceblue;
+}
+h3:hover{
+    color: rgb(218, 10, 10);
+}
 
   

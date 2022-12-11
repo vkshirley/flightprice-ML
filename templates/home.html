@@ -18,17 +18,17 @@
 </head>
 <style>
     body {
-      background-image: url('static/image/flight.jpg');
+      background-image: url('static/image/air2.jpg');
     }
 </style>
 
 <body>
 
-    <!-- As a heading -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+   
+    <nav class="navbar navbar-dark bg-primary">
         <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="/">Prediction of Flight Price using Machine Learning</a>
+            <div class="container">
+                <h1><a class="navbar-brand" href="/">Prediction of Flight Fare using Machine Learning </a></h1>
             </div>
         </div>
     </nav>
@@ -60,7 +60,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Date of Arrival</h5>
-                            <!-- Arrival -->
+                            
                             <input type="datetime-local" name="Arrival_Time" id="Arrival_Time" required="required">
                         </div>
                     </div>
@@ -77,7 +77,7 @@
                         <div class="card-body">
                             <!-- Source -->
                             <h5 class="card-title">Source</h5>
-                            <select name="Source" id="Source" required="required">
+                            <select class="custom-select" name="Source" id="Source" required="required">
                                 <option value="Delhi">Delhi</option>
                                 <option value="Kolkata">Kolkata</option>
                                 <option value="Mumbai">Mumbai</option>
@@ -91,9 +91,9 @@
                         <div class="card-body">
                             <h5 class="card-title">Destination</h5>
                             <!-- Destination -->
-                            <select name="Destination" id="Destination" required="required">
+                            <select class="custom-select" name="Destination" id="Destination" required="required">
                                 <option value="Cochin">Cochin</option>
-                                <option value="Delhi">Delhi</option>
+                                <!-- <option value="Delhi">Delhi</option> -->
                                 <option value="New Delhi">New Delhi</option>
                                 <option value="Hyderabad">Hyderabad</option>
                                 <option value="Kolkata">Kolkata</option>
@@ -115,7 +115,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Flight Type</h5>
                             <!-- Total Stops -->
-                            <select name="stops" required="required">
+                            <select class="custom-select" name="stops" required="required">
                                 <option value="0">Non-Stop</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -130,7 +130,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Which Airline you want to travel?</h5>
                             <!-- Airline -->
-                            <select name="airline" id="airline" required="required">
+                            <select class="custom-select" name="airline" id="airline" required="required">
                                 <option value="Jet Airways">Jet Airways</option>
                                 <option value="IndiGo">IndiGo</option>
                                 <option value="Air India">Air India</option>
@@ -156,11 +156,8 @@
             <br>
             <br>
             <!-- Submit -->
-            <input type="submit" value="Submit" class="btn btn-secondary">
+            <input type="submit" value="Submit" class="btn btn-success">
         </form>
-
-        <br>
-        <br>
         <h3>{{ prediction_text }}</h3>
 
         <br>

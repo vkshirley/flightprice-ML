@@ -26,12 +26,12 @@ def predict():
         date_dep = request.form["Dep_Time"]
         Journey_day = int(pd.to_datetime(date_dep, format="%Y-%m-%dT%H:%M").day)
         Journey_month = int(pd.to_datetime(date_dep, format ="%Y-%m-%dT%H:%M").month)
-        # print("Journey Date : ",Journey_day, Journey_month)
+        
 
         # Departure
         Dep_hour = int(pd.to_datetime(date_dep, format ="%Y-%m-%dT%H:%M").hour)
         Dep_min = int(pd.to_datetime(date_dep, format ="%Y-%m-%dT%H:%M").minute)
-        # print("Departure : ",Dep_hour, Dep_min)
+       
 
         # Arrival
         date_arr = request.form["Arrival_Time"]
@@ -49,7 +49,7 @@ def predict():
         # print(Total_stops)
 
         # Airline
-        # AIR ASIA = 0 (not in column)
+        # AIR ASIA = 0
         airline=request.form['airline']
         if(airline=='Jet Airways'):
             Jet_Airways = 1

@@ -22,4 +22,11 @@ h3:hover{
     color: rgb(218, 10, 10);
 }
 
-  
+.box-shadow {
+    font-family: cursive, sans-serif;
+    background-color: #2e78cc;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 20px 23px #d89548;
+  }

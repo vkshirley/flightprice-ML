@@ -312,13 +312,24 @@ def predict():
         ]])
 
         output=round(prediction[0],2)
-
+        #demo code
+        
+        h=f"Date of Departure Selected : {date_dep} ,  Date of Arrival Selected :{date_arr},Source Selected : {Source} , Airline Selected :  {airline} "
+        f=open("history.txt",'w')
+        f.write(str(h))
         return render_template('home.html',prediction_text="Estimated Flight price is Rs. {}".format(output))
+        
 
 
     return render_template("home.html")
 
 
+@app.route("/history", methods = ["GET", "POST"])
+@cross_origin()
+def history():
+    f=open("history.txt",'r')
+    
+    return render_template("demo.html",history_text="Prediction History ::{} ".format(f.read()))
 
 
 if __name__ == "__main__":
